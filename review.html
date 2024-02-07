@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="home2.html">Home page</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviewer's Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="menu">
+    <h2>Reviewer's Menu</h2>
+    <ul>
+      <li>Pending Assignments/Proposals: <span id="pending-number">0</span></li>
+      <li>Completed Assignments per Session/Year/Semester: <span id="completed-number">5</span></li>
+      <li>Due Assignments: <span id="due-number">3</span></li>
+      <li>Overdue Assignments: <span id="overdue-number">1</span></li>
+      <li>Withdrawn Assignments: <span id="withdrawn-number">2</span></li>
+    </ul>
+  </div>
+
+  <div class="page-view">
+    <h2>Reviewer's Page View</h2>
+    <ul>
+      <li>Track Number: <input type="checkbox" id="track-checkbox"></li>
+      <li>Level: <input type="checkbox" id="level-checkbox"></li>
+      <li>Discipline: <input type="checkbox" id="discipline-checkbox"></li>
+      <li>[No Name]: <input type="checkbox" id="noname-checkbox"></li>
+      <li>[No amount paid]: <input type="checkbox" id="noamount-checkbox"></li>
+      <li>Title, Intro, Mat & Mtd etc: <input type="checkbox" id="sections-checkbox"></li>
+    </ul>
+    <form action="#">
+      <label for="submit-review">Submit Review:</label>
+      <select id="submit-review">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="conditional">Conditional</option>
+      </select>
+      <br>
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" rows="4" cols="50"></textarea>
+    </form>
+  </div>
+</body>
+</html>
